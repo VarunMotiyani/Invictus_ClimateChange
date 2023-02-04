@@ -15,7 +15,7 @@ export default makeStyles((theme) => ({
     },
   },
   link: {
-    color: 'white',
+    color: 'black',
     margin: theme.spacing(2),
     textDecoration: 'none',
   },

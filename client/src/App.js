@@ -8,6 +8,7 @@ import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
 import CreatorOrTag from './components/CreatorOrTag/CreatorOrTag';
 import App1 from './components/LiveD/App1';
+import App2 from './components/LocData/App2';
 
 const App = () => {
   const user = JSON.parse(localStorage.getItem('profile'));
@@ -17,7 +18,7 @@ const App = () => {
       <Container maxWidth="xl">
         <Navbar />
         <Switch>
-          <Route path="/" exact component={App1} />
+          <Route path="/" exact component={App2} />
           <Route path="/posts" exact component={Home} />
           <Route path="/posts/search" exact component={Home} />
           <Route path="/posts/:id" exact component={PostDetails} />

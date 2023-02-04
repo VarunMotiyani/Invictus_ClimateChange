@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { AppBar, Typography, Toolbar, Avatar, Button } from '@material-ui/core';
+import { AppBar, Typography, Toolbar, Avatar, Button, Menu, MenuItem } from '@material-ui/core';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
-// import memoriesLogo from '../../images/memoriesLogo.png';
-// import memoriesText from '../../images/memoriesText.png';
 import logo from '../../images/newlogo.png'
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
@@ -16,6 +14,16 @@ const Navbar = () => {
   const location = useLocation();
   const history = useHistory();
   const classes = useStyles();
+
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   const logout = () => {
     dispatch({ type: actionType.LOGOUT });
@@ -45,8 +53,22 @@ const Navbar = () => {
         {/* <h1 className={classes.logo}>WeatherGuardian</h1> */}
       </Link>
       <Toolbar className={classes.toolbar}>
-      <Link to="/feed" className={classes.link}>Feed</Link>
-  <Link to="/dashboard" className={classes.link}>Dashboard</Link>
+      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} className={classes.link}>
+          Dashboard
+        </Button>
+        <Menu
+          id="simple-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        >
+          <MenuItem component={Link} to="/" onClick={handleClose}>Current</MenuItem>
+          <MenuItem component={Link} to="/mumbai" onClick={handleClose}>Mumbai</MenuItem>
+        </Menu>
+
+      <Link to="/posts" className={classes.link}>Feed</Link>
+ 
         {user?.result ? (
           <div className={classes.profile}>
             <Avatar className={classes.purple} alt={user?.result.name} src={user?.result.imageUrl}>{user?.result.name.charAt(0)}</Avatar>
