@@ -64,7 +64,7 @@ const Navbar = () => {
           onClose={handleClose}
         >
           <MenuItem component={Link} to="/" onClick={handleClose}>Current</MenuItem>
-          <MenuItem component={Link} to="/mumbai" onClick={handleClose}>Mumbai</MenuItem>
+          <MenuItem component={Link} to="/fixed" onClick={handleClose}>Mumbai</MenuItem>
         </Menu>
 
       <Link to="/posts" className={classes.link}>Feed</Link>

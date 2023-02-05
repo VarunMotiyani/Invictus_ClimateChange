@@ -9,6 +9,7 @@ import Auth from './components/Auth/Auth';
 import CreatorOrTag from './components/CreatorOrTag/CreatorOrTag';
 import App1 from './components/LiveD/App1';
 import App2 from './components/LocData/App2';
+import MumbaiWeather from './components/LocData/Fixed';
 
 const App = () => {
   const user = JSON.parse(localStorage.getItem('profile'));
@@ -19,6 +20,7 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route path="/" exact component={App2} />
+          <Route path="/fixed" component={MumbaiWeather} />
           <Route path="/posts" exact component={Home} />
           <Route path="/posts/search" exact component={Home} />
           <Route path="/posts/:id" exact component={PostDetails} />
