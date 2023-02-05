@@ -89,7 +89,12 @@ const MumbaiWeather = () => {
     Caution! Heavy Rainfalls and Floods are expected in your Area.
     </Typography>
 
-    {/* add the graph images here */}
+    <Typography variant="h5">Causes:</Typography>
+    {/* Images of Causes  add images side by side in 2*2  Total 4 images to add in causes*/}
+    <Typography variant="h5">Effects:</Typography>
+    {/* Images of Effects add images side by side in 2*2 total 2 images to add in effects */}
+    
+
     
       <Grid container className={classes.section}>
         <Grid item xs={6}>
@@ -137,6 +142,8 @@ const MumbaiWeather = () => {
     </ul>
     </Grid>
     </Grid>
+
+    {/* add sos button functionality */}
     <Button
 variant="contained"
 className={classes.sosBtn}
