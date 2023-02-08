@@ -1,8 +1,8 @@
 This is a Project Of Grp No - SR-29 Invictus2k23
 Project Name = WeatherGuardian
 
-This was my project submission of the 24Hour Hackathon Invictus.
-You can find more about it on my hashnode blog:
+This was my project submission of the 24Hour Hackathon Invictus. <br>
+You can find more about it on my hashnode blog: <br>
 https://invictushackathon.hashnode.dev/invictus-hackathon-2023
 Please do check it out.
 
