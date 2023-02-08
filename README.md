@@ -3,11 +3,11 @@ Project Name = WeatherGuardian
 
 This was my project submission of the 24Hour Hackathon Invictus. <br>
 You can find more about it on my hashnode blog: <br>
-https://invictushackathon.hashnode.dev/invictus-hackathon-2023
-Please do check it out.
+https://invictushackathon.hashnode.dev/invictus-hackathon-2023   <br>
+Please do check it out. <br>
 
-To run this project:
-1. Clone this repository and unzip it.
+To run this project: <br>
+1. Clone this repository and unzip it. <br>
 2. Navigate to the client folder in your terminal and run
 
 **npm install --force**
