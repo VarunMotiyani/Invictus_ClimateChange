@@ -11,20 +11,32 @@ To run this project:
 2. Navigate to the client folder in your terminal and run
 
 **npm install --force**
+
 then
+
 **npm start**
 
 3. Open another terminal and navigate to server folder and
-**npm install** or **npm install --force**
 
-then **npm start**
+**npm install**       or      **npm install --force**
+
+then
+
+**npm start**
+
 
 4. Open another terminal window and navigate to Weather folder
+
 then do
+
+
 **npm install**
 
+
 then 
+
 **npm start**
 
 now the react application is up and running and you can go through it on your 
+
 **localhost:3000**
